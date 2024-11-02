@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Satu Halaman</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .full-screen-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .marquee {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .marquee-text {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 10s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(-100%, 0); }
+        }
+    </style>
+</head>
+<body>
+
+    <img src="gambar.jpg" alt="Gambar" class="full-screen-image">
+
+    <div class="marquee">
+        <div class="marquee-text">Selamat datang di situs web kami! Nikmati musik dan gambar indah.</div>
+    </div>
+
+    <audio autoplay loop>
+        <source src="lagu.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+</body>
+</html>
