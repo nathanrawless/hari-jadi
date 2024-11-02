@@ -24,9 +24,9 @@
             position: absolute;
             bottom: 20px;
             width: 100%;
-            white-space: nowrap;
             overflow: hidden;
             box-sizing: border-box;
+            white-space: nowrap;
         }
 
         .marquee-text {
@@ -38,17 +38,17 @@
         }
 
         @keyframes marquee {
-            0% { transform: translate(100%, 0); }
-            100% { transform: translate(-100%, 0); }
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
         }
     </style>
 </head>
 <body>
 
-    <img src="foto.jpg" alt="Gambar" class="full-screen-image">
+    <img src="gambar.jpg" alt="Gambar" class="full-screen-image">
 
     <div class="marquee">
-        <div class="marquee-text">Selamat ulang tahun sayangku, jadi anak berbakti ya buat orang tua kamu. love u .</div>
+        <div class="marquee-text">Selamat ulang tahun Shalma ku, segala doa terbaik untuk kamu;). &nbsp;Selamat ulang tahun Shalma ku, segala doa terbaik untuk kamu;).</div>
     </div>
 
     <audio autoplay loop>
